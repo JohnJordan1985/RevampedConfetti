@@ -9,6 +9,10 @@ body {
 	font-family: 'Alegreya Sans', sans-serif;
 }
 
+nav {
+	background-color: white;
+}
+
 h1, h2 {
 	/* Following fonts used for testing purposes */
 	font-family: 'Playfair Display', serif;
@@ -16,7 +20,7 @@ h1, h2 {
 }
 
 header {
-	background-image: url("http://via.placeholder.com/1500x650");
+	/*background-image: url("http://via.placeholder.com/1500x650");*/
 }
 
 section {
