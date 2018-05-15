@@ -1,0 +1,25 @@
+/* CUSTOM STYLES FOR REVAMPED CONFETTI WEBSITE */
+
+* {
+	/*border: 1px solid gray;*/
+}
+body {
+	/* Following fonts used for testing purposes */
+	font-family: 'Alegreya', serif;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+h1, h2 {
+	/* Following fonts used for testing purposes */
+	font-family: 'Playfair Display', serif;
+	font-family: 'Abril Fatface', cursive;
+}
+
+header {
+	background-image: url("http://via.placeholder.com/1500x650");
+}
+
+section {
+	/* This padding is applied to all section elements to ensure content is left-aligned with jumbotron */
+	padding-left: 32px;
+}
