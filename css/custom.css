@@ -40,3 +40,9 @@ section {
   border-color: rgb(255,102,203);
   color: blue;
 }
+
+/* A class to apply to elements to highlight them for screenshots */
+
+.show {
+	background-color: #aca;
+}
