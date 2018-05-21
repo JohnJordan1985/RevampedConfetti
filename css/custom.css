@@ -1,7 +1,7 @@
 /* CUSTOM STYLES FOR REVAMPED CONFETTI WEBSITE */
 
 * {
-	/*border: 1px solid gray;*/
+	border: 1px solid gray;
 }
 body {
 	/* Following fonts used for testing purposes */
@@ -26,4 +26,17 @@ header {
 section {
 	/* This padding is applied to all section elements to ensure content is left-aligned with jumbotron */
 	padding-left: 32px;
+}
+
+.playfair {
+	font-family: 'Playfair Display', serif;
+}
+
+.serif {
+	font-family: 'Alegreya', serif;
+}
+
+.custom-toggler.navbar-toggler-icon {
+  border-color: rgb(255,102,203);
+  color: blue;
 }
