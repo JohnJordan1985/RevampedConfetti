@@ -25,7 +25,8 @@ header {
 
 section {
 	/* This padding is applied to all section elements to ensure content is left-aligned with jumbotron */
-	padding-left: 32px;
+	/* NB: This cost you 30 minutes, as you couldn't figure out why there was additional padding-left on sectoin elements!*/
+	/*padding-left: 32px;*/
 }
 
 .playfair {
