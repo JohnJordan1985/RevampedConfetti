@@ -1,8 +1,23 @@
 /* CUSTOM STYLES FOR REVAMPED CONFETTI WEBSITE */
 
+/* LAYOUT */
+
 * {
 	border: 1px solid gray;
 }
+
+header {
+	/*background-image: url("http://via.placeholder.com/1500x650");*/
+}
+
+section {
+	/* This padding is applied to all section elements to ensure content is left-aligned with jumbotron */
+	/* NB: This cost you 30 minutes, as you couldn't figure out why there was additional padding-left on sectoin elements!*/
+	/*padding-left: 32px;*/
+}
+
+/* TYPOGRAPHY */
+
 body {
 	/* Following fonts used for testing purposes */
 	font-family: 'Alegreya', serif;
@@ -19,16 +34,6 @@ h1, h2 {
 	font-family: 'Abril Fatface', cursive;
 }
 
-header {
-	/*background-image: url("http://via.placeholder.com/1500x650");*/
-}
-
-section {
-	/* This padding is applied to all section elements to ensure content is left-aligned with jumbotron */
-	/* NB: This cost you 30 minutes, as you couldn't figure out why there was additional padding-left on sectoin elements!*/
-	/*padding-left: 32px;*/
-}
-
 .playfair {
 	font-family: 'Playfair Display', serif;
 }
@@ -37,7 +42,10 @@ section {
 	font-family: 'Alegreya', serif;
 }
 
+/* COLOURS */
+
 .custom-toggler.navbar-toggler-icon {
+	/*Adds pink colour to border */
   border-color: rgb(255,102,203);
   color: blue;
 }
