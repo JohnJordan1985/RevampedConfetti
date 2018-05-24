@@ -112,6 +112,7 @@ h1, h2 {
 	/*Adds pink colour to border */
   border-color: rgb(255,102,203);
   color: blue;
+  padding-right: 1em;
 }
 
 /* A class to apply to elements to highlight them for screenshots */

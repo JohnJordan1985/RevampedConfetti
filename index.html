@@ -35,13 +35,13 @@
 		<!-- End of anchor tag containing logo -->
 		<!-- Start of button that controls collapsable menu functionality -->
 		<!-- Constrained width of button element and aligned it to right using 'ml-auto' class, to right-align hamburger icon -->
-		<button class="col-1 navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation" role="navigation">
-		    <span class="custom-toggler  navbar-toggler-icon"></span>
+		<button class="col-8 navbar-toggler ml-auto text-right" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation" role="navigation">
+		    <span class="custom-toggler navbar-toggler-icon"></span>
 		</button>
 		<!-- End of button that controls collapsable menu functionality -->
 		<!-- Start of nav bar menu items, wrapped in a div for collapsable functionality -->
 		<!-- Start of wrapper div -->
-		<div id="mobileMenu" class="col collapse navbar-collapse pr-0">
+		<div id="mobileMenu" class="col-12 collapse navbar-collapse pr-0">
 			<!-- Needed to add class 'ml-auto' to right-align menu options -->
 			<ul class="navbar-nav ml-auto">
 				<!-- Start of navigation-links -->
@@ -100,7 +100,9 @@
 		<!-- Start of first row, first column -->
 		<div class="col-md-6 my-3 py-3">
 	        <h2 class="display">Another Headline</h2>
-	        <p class="lead w-50 mx-auto">And an even wittier subheading.</p>
+	        <p class="lead col-md-6 mx-auto">
+	        	<!-- 'col-md-6' and 'mx-auto' classes center element on medium-up screens -->
+	        	And an even wittier subheading.</p>
 		</div>
 		<!-- End of first row, first column -->
 		<!-- Start of first row, second column -->
@@ -115,9 +117,9 @@
 		<!-- Start of SECOND row, first column -->
 		<div class="col-md-6 my-3 py-3">
 	        <h2 class="display">Another Headline Below</h2>
-	        <p class="lead w-50 mx-auto">
-	        	<!-- Takes up half-width and centers using 'margin: 0 auto'-->
-	        	This placeholder text is more modest than the one above.
+	        <p class="lead col-md-6 mx-auto">
+	        	<!-- 'col-md-6' and 'mx-auto' classes center element on medium-up screens -->
+	        	This place-holder text is more modest than the one above.
 	        </p>
 		</div>
 		<!-- End of SECOND row, first column -->
@@ -134,7 +136,10 @@
 		<!-- Start of THIRD row, first column -->
 		<div class="col-md-6 my-3 py-3">
 	        <h2 class="display">Another headline</h2>
-	        <p class="lead w-50 mx-auto">And an even wittier subheading.</p>
+	        <p class="lead col-12 col-md-6 mx-auto">
+	        	<!-- 'col-md-6' and 'mx-auto' classes center element on medium-up screens -->
+	        	And an even wittier subheading.</p>
+
 		</div>
 		<!-- End of THIRD row, first column -->
 		<!-- Start of THIRD row, second column -->
@@ -148,8 +153,8 @@
 	<section class="row justify-content-center show-p">
 		<div class="col-12 col-md-6 text-center show my-3 py-3">
 			<h2 class="display">A form to fill out!</h2>
-			<p class="lead w-50 mx-auto">How very lovely. And, look! </p>
-			<p class="lead w-50 mx-auto">It is centered in its container, using justify-content.</p>
+			<p class="lead col-md-6 mx-auto">How very lovely. And, look! </p>
+			<p class="lead col-md-6 mx-auto">It is centered in its container, using justify-content.</p>
 			<form action="#">
 				<div class="form-group">
 				    <label for="exampleInputEmail1">Email address</label>
@@ -176,11 +181,11 @@
 			<div class="">Our Services</div>
 			<!-- end line -->
 			<nav class="d-flex justify-content-around flex-wrap">
-				<a href="#" class="">Legal</a>
-				<a href="#" class="">Budgets</a>
-				<a href="#" class="">Guest List</a>
-				<a href="#" class="">Suppliers</a>
-				<a href="#" class="">Venues</a>
+				<a href="#" class="mx-3 my-2">Legal</a>
+				<a href="#" class="mx-3 my-2">Budgets</a>
+				<a href="#" class="mx-3 my-2">Guest List</a>
+				<a href="#" class="mx-3 my-2">Suppliers</a>
+				<a href="#" class="mx-3 my-2">Venues</a>
 			</nav>
 			<!-- end line -->
 			<div class="">Authorship Information</div>
