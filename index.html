@@ -41,7 +41,7 @@
 		<!-- End of button that controls collapsable menu functionality -->
 		<!-- Start of nav bar menu items, wrapped in a div for collapsable functionality -->
 		<!-- Start of wrapper div -->
-		<div id="mobileMenu" class="col collapse navbar-collapse">
+		<div id="mobileMenu" class="col collapse navbar-collapse pr-0">
 			<!-- Needed to add class 'ml-auto' to right-align menu options -->
 			<ul class="navbar-nav ml-auto">
 				<!-- Start of navigation-links -->
@@ -70,11 +70,27 @@
 	<header class="row jumbotron">
 		<div class="offset-md-1 col-md-5">
 			<!-- Start of headline -->
-			<h1 class="row display-1">Hello, world!</h1>
+			<h1 class="display">
+				<div class="">
+					Ready.
+				</div>
+				<div class="">Steady.</div>
+				<div class="">Confetti!</div>
+			</h1>
 			<!-- End of headline -->
 			<!-- 'Lead' class applied to paragraph to add emphasis -->
-			<p class="row lead">There are times when I think that I take <br>too long, thinking about typography.</p>
-			<p class="row lead">Like now, for example.</p>
+			<p class="lead col-12 no-gutter">
+				Want to plan your own wedding,
+				<br class="title-breaker d-md-none d-lg-block" />
+				<!-- Using Bootstrap display functionality along with custom breakpoints, to toggle visibility -->
+				but afraid it might be stressful?
+			</p>
+			<p class="lead col-12 no-gutter">
+				What if planning your big day,
+				<br class="title-breaker d-md-none d-lg-block"/>
+				could actually be fun?
+				<!-- Using Bootstrap display functionality along with custom breakpoints, to toggle visibility -->
+			</p>
 			<!-- <p class="row lead">This too, is also text about bland things as well.</p> -->
 		</div>
 	</header>
@@ -82,28 +98,31 @@
 	<!-- Start of first row -->
 	<section class="row d-md-flex align-items-center text-center">
 		<!-- Start of first row, first column -->
-		<div class="col-md-6 my-3 py-3 show">
-	        <h2 class="display-5 show-p">Another headline</h2>
-	        <p class="lead show-p">And an even wittier subheading.</p>
+		<div class="col-md-6 my-3 py-3">
+	        <h2 class="display">Another Headline</h2>
+	        <p class="lead w-50 mx-auto">And an even wittier subheading.</p>
 		</div>
 		<!-- End of first row, first column -->
 		<!-- Start of first row, second column -->
-		<div class="col-md-6">
+		<div class="col-md-6 show no-gutter">
 			<img class="img-fluid" src="http://via.placeholder.com/750x350" alt="A placeholder image">
 		</div>
 		<!-- End of first row, second column -->
 	</section>
 	<!-- End of first row -->
 	<!-- Start of SECOND row -->
-	<section class="row flex-row-reverse">
+	<section class="row flex-row-reverse text-center">
 		<!-- Start of SECOND row, first column -->
 		<div class="col-md-6 my-3 py-3">
-	        <h2 class="display-5">Another headline</h2>
-	        <p class="lead">And an even wittier subheading.</p>
+	        <h2 class="display">Another Headline Below</h2>
+	        <p class="lead w-50 mx-auto">
+	        	<!-- Takes up half-width and centers using 'margin: 0 auto'-->
+	        	This placeholder text is more modest than the one above.
+	        </p>
 		</div>
 		<!-- End of SECOND row, first column -->
 		<!-- Start of SECOND row, second column -->
-		<div class="col-md-6">
+		<div class="col-md-6 show-p no-gutter">
 			<img class="img-fluid" src="http://via.placeholder.com/750x350" alt="A placeholder image">
 		</div>
 		<!-- End of SECOND row, second column -->
@@ -111,15 +130,15 @@
 	<!-- End of SECOND row -->
 
 	<!-- Start of THIRD row -->
-	<section class="row">
+	<section class="row text-center">
 		<!-- Start of THIRD row, first column -->
 		<div class="col-md-6 my-3 py-3">
-	        <h2 class="display-5">Another headline</h2>
-	        <p class="lead">And an even wittier subheading.</p>
+	        <h2 class="display">Another headline</h2>
+	        <p class="lead w-50 mx-auto">And an even wittier subheading.</p>
 		</div>
 		<!-- End of THIRD row, first column -->
 		<!-- Start of THIRD row, second column -->
-		<div class="col-md-6">
+		<div class="col-md-6 no-gutter">
 			<img class="img-fluid" src="http://via.placeholder.com/750x350" alt="A placeholder image">
 		</div>
 		<!-- End of THIRD row, second column -->
@@ -128,13 +147,13 @@
 	<!-- Start of FORM row -->
 	<section class="row justify-content-center show-p">
 		<div class="col-12 col-md-6 text-center show my-3 py-3">
-			<h2 class="display-5">A form to fill out!</h2>
-			<p class="lead">How very lovely. And, look! </p>
-			<p class="lead">It is centered in its container, using justify-content.</p>
+			<h2 class="display">A form to fill out!</h2>
+			<p class="lead w-50 mx-auto">How very lovely. And, look! </p>
+			<p class="lead w-50 mx-auto">It is centered in its container, using justify-content.</p>
 			<form action="#">
 				<div class="form-group">
 				    <label for="exampleInputEmail1">Email address</label>
-				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				    <input type="email" class="form-control text-center" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 				    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 				  </div>
 				  <!-- Start of check-box -->
@@ -156,7 +175,7 @@
 		<div class="wrapper col-12 my-5">
 			<div class="">Our Services</div>
 			<!-- end line -->
-			<nav class="d-flex justify-content-around">
+			<nav class="d-flex justify-content-around flex-wrap">
 				<a href="#" class="">Legal</a>
 				<a href="#" class="">Budgets</a>
 				<a href="#" class="">Guest List</a>
@@ -167,7 +186,7 @@
 			<div class="">Authorship Information</div>
 			<!-- end line -->
 			<address class="">
-				This “Ready Confetti” website was created by John Jordan during May and June 2018. © copyright <span id="year">2018</span> John Jordan.
+				This “Ready Confetti” website was created by John Jordan during May and June 2018. <br/>© copyright <span id="year">2018</span> John Jordan.
 			</address>
 			<!-- end line -->
 		</div>
