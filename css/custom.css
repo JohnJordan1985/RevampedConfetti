@@ -124,3 +124,11 @@ h1, h2 {
 .show-p {
 	background-color: #fcd;
 }
+
+/* IMAGES */
+
+img.mh-50 {
+	/*custom class to restrict height of SVG logo-mark */
+	max-height: 50px;
+
+}
