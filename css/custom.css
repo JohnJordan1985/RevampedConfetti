@@ -3,10 +3,11 @@
 /* LAYOUT */
 
 * {
-	border: 1px solid gray;
+	/*border: 1px solid gray;*/
 }
 
-header {
+header > div {
+	max-width: 375px;
 	/*background-image: url("http://via.placeholder.com/1500x650");*/
 }
 
@@ -14,6 +15,11 @@ section {
 	/* This padding is applied to all section elements to ensure content is left-aligned with jumbotron */
 	/* NB: This cost you 30 minutes, as you couldn't figure out why there was additional padding-left on sectoin elements!*/
 	/*padding-left: 32px;*/
+}
+
+.nav-item {
+	margin-right: 15px;
+	margin-left: 15px;
 }
 
 .no-gutter[class*="col-"] {
@@ -111,12 +117,58 @@ h1, h2 {
 	font-family: 'Alegreya', serif;
 }
 
+
 /* COLOURS */
+
+:root {
+    --rc-pink: #FF1493;
+    --rc-purple: #6495ED;
+    --rc-lightest-purple: #F1F5FD;
+    --rc-lighter-purple:  #E0E9FB;
+    --rc-light-purple: #CFDCF8;
+    --rc-purple-grey:  #4B70B2;
+    --rc-purple-black: #19253B;
+}
+
+.rc-pink {
+	background-color: var(--rc-pink);
+	color: white;
+}
+.rc-purple {
+   background-color: var(--rc-purple);
+}
+.rc-lightest-purple {
+   background-color: var(--rc-lightest-purple);
+}
+.rc-lighter-purple {
+   background-color: var(--rc-lighter-purple);
+}
+.rc-light-purple {
+   background-color: var(--rc-light-purple);
+}
+.rc-purple-grey {
+   background-color: var(--rc-purple-grey);
+
+}
+.rc-purple-black {
+   background-color: var(--rc-purple-black);
+   /* Change text colour, based on dark background */
+}
 
 body {
 	background-color: #CCC;
 }
 
+.black {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+header > div {
+	background-color: rgba(255,255,255,0.7);
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
 .custom-toggler.navbar-toggler-icon {
 	/*Adds pink colour to border */
   border-color: rgb(255,102,203);
@@ -130,7 +182,7 @@ section {
 
 /* A class to apply to elements to highlight them for screenshots */
 
-.show {
+.show-g {
 	background-color: #aca;
 }
 
@@ -174,7 +226,7 @@ img.mh-66 {
 
 /* USER INTERFACE ELEMENTS */
 
-button.btn.btn-block {
+.sticky-top, button.btn.btn-block {
 	box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
@@ -183,25 +235,38 @@ button.btn.btn-block:hover {
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-a, a.nav-link {
-	color: #666666;
+a.nav-link {
+	color: black;
+	padding-bottom: 0;
+
+}
+
+header a.nav-link {
 	text-decoration: underline;
 }
 
-li > a.nav-link {
-	text-decoration: none;
+.footer-links > a {
+	color: #FFFFFF;
+	text-decoration: underline;
 }
 
-li.active > a > span {
+li.active {
 	border-bottom: solid 4px #000000;
-	font-weight: 700;
 }
 
-li.active > a.nav-link {
-	color: #000000;
+@media screen and (max-width: 768px) {
+	li.active {
+		border-bottom: none;
+	}
 }
 
 /* Misc */
+
+section> .form-wrapper {
+	border: solid 20px transparent;
+	/* Need to specify a border first, before image will display */
+	border-image: url('../img/frame-border.jpg') 300 round;
+}
 
 /* Bootstrap 4 responsive breakpoints */
 /*// Small devices (landscape phones, 576px and up)*/

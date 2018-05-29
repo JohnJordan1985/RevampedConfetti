@@ -25,7 +25,7 @@
 <body class="container-fluid">
 	<!-- Start of navigation bar -->
 	<!-- Used class 'sticky-top' rather than 'fixed-top' as 'fixed-top' overlaps content below it -->
-	<nav class="row navbar navbar-expand-md sticky-top navbar-light">
+	<nav class="row navbar navbar-expand-md sticky-top">
 		<!-- Start of anchor tag containing logo -->
 		<a class="col-4" href="#">
 			<!-- Logo -->
@@ -48,7 +48,7 @@
 				<!-- Start of navigation-links -->
 				<li class="nav-item active">
 					<a href="#" class="nav-link">
-						<span>Home</span>
+						Home
 					</a>
 				</li>
 				<li class="nav-item">
@@ -71,7 +71,7 @@
 
 	<!-- Start of jumbotron -->
 	<header class="row jumbotron mb-0 pt-0">
-		<div class="offset-md-1 col-md-5 col-lg-5 pt-3">
+		<div class="offset-md-1 col-md-5 col-xl-4 pt-3">
 			<!-- Start of headline -->
 			<h1 class="display">
 				<div class="">
@@ -95,13 +95,13 @@
 				<!-- Using Bootstrap display functionality along with custom breakpoints, to toggle visibility -->
 			</p>
 			<!-- <p class="row lead">This too, is also text about bland things as well.</p> -->
-			<button class="btn btn-block">Sign-up Now</button>
+			<button class="btn btn-block rc-pink">Sign-up Now</button>
 			<a href="#me" id="me" class="nav-link col-12 text-center">Find out more</a>
 		</div>
 	</header>
 	<!-- End of jumbotron -->
 	<!-- Start of first row -->
-	<section class="row align-items-center text-center show-p" id="first-row">
+	<section class="row align-items-center text-center rc-lightest-purple" id="first-row">
 		<!-- Start of first row, first column -->
 		<div class="col-md-6 py-3">
 	        <h2 class="display">Who Needs Wedding Stress?</h2>
@@ -111,7 +111,7 @@
 		</div>
 		<!-- End of first row, first column -->
 		<!-- Start of first row, second column -->
-		<div class="col-md-6 show no-gutter">
+		<div class="col-md-6 show-g no-gutter">
 			<!-- Applying 'd-flex' class makes div take up entire height available to it -->
 			<img class="img-fluid min-400" src="http://via.placeholder.com/1200x350" alt="A placeholder image">
 		</div>
@@ -119,7 +119,7 @@
 	</section>
 	<!-- End of first row -->
 	<!-- Start of SECOND row -->
-	<section class="row flex-row-reverse align-items-center text-center">
+	<section class="row flex-row-reverse align-items-center text-center rc-lighter-purple">
 		<!-- Start of SECOND row, first column -->
 		<div class="col-md-6 py-3">
 	        <h2 class="display">Wouldn’t it be great if?</h2>
@@ -138,7 +138,7 @@
 	<!-- End of SECOND row -->
 
 	<!-- Start of THIRD row -->
-	<section class="row align-items-center text-center">
+	<section class="row align-items-center text-center rc-light-purple">
 		<!-- Start of THIRD row, first column -->
 		<div class="col-md-6 py-3">
 	        <h2 class="display">We can help!</h2>
@@ -156,37 +156,30 @@
 	</section>
 	<!-- End of THIRD row -->
 	<!-- Start of FORM row -->
-	<section class="row justify-content-center">
-		<div class="col-12 col-md-6 text-center my-3 py-3">
+	<section class="row justify-content-center rc-lightest-purple">
+		<div class="col-12 col-md-6 text-center my-3 py-3 rc-lighter-purple form-wrapper">
 			<h2 class="display">A form to fill out!</h2>
 			<p class="lead ">How very lovely. And, look! </p>
 			<p class="lead ">It is centered in its container, using justify-content.</p>
-			<form action="#">
+			<form action="#" class="col-12 col-md-10 col-lg-8 mx-auto">
 				<div class="form-group">
-				    <label for="exampleInputEmail1">Email address</label>
-				    <input type="email" class="form-control text-center" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-				    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-				  </div>
-				  <!-- Start of check-box -->
-				  <div class="form-check">
-				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-				    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-				  </div>
-				  <!-- End of check box -->
-				  <!-- Start of button -->
-				  <button type="submit" class="btn btn-primary">Submit</button>
-				  <!-- End of button -->
+				    <input type="email" class="form-control text-center" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+				    <small id="emailHelp" class="form-text text-muted">We’ll never share your email with anyone else.</small>
+				</div>
+				<!-- Start of button -->
+				<button type="submit" class="btn btn-block rc-pink">Sign-up to Ready Conetti</button>
+				<!-- End of button -->
 			</form>
 		</div>
 	</section>
 	<!-- End of FORM row -->
 	<!-- Start of Footer -->
-	<footer class="row text-center">
+	<footer class="row text-center black">
 		<!-- Start of wrapper div -->
 		<div class="wrapper col-12 my-5">
-			<div class="">Our Services</div>
+			<div class="lead">Our Services</div>
 			<!-- end line -->
-			<nav class="d-flex justify-content-around flex-wrap margin-bottom">
+			<nav class="black footer-links d-flex justify-content-around flex-wrap margin-bottom">
 				<a href="#" class="mx-3 my-2">Legal</a>
 				<a href="#" class="mx-3 my-2">Budgets</a>
 				<a href="#" class="mx-3 my-2">Guest List</a>
@@ -194,7 +187,7 @@
 				<a href="#" class="mx-3 my-2">Venues</a>
 			</nav>
 			<!-- end line -->
-			<div class="">Authorship Information</div>
+			<div class="lead">Authorship Information</div>
 			<!-- end line -->
 			<address class="">
 				This “Ready Confetti” website was created by John Jordan during May and June 2018. <br/>© copyright <span id="year">2018</span> John Jordan.
