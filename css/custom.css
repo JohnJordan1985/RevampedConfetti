@@ -8,7 +8,7 @@
 
 header > div {
 	max-width: 375px;
-	/*background-image: url("http://via.placeholder.com/1500x650");*/
+	/*padding-top:  2.42rem;*/
 }
 
 section {
@@ -18,8 +18,8 @@ section {
 }
 
 .nav-item {
-	margin-right: 15px;
-	margin-left: 15px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 .no-gutter[class*="col-"] {
@@ -58,6 +58,10 @@ body {
 	line-height: 2.42rem;
 }
 
+small {
+	line-height: 1.21rem;
+}
+
 .margin-bottom {
 	/* This custom class applies a margin-bottom, equal to the line-height, to build vertical rhythm */
 	margin-bottom: 1.375rem;
@@ -83,7 +87,7 @@ h2.display {
 	font-size: 2.618rem;
 }
 
-.lead {
+.lead, .navbar-nav {
 	font-size: 1.618rem;
 }
 
@@ -173,7 +177,7 @@ header > div {
 	/*Adds pink colour to border */
   border-color: rgb(255,102,203);
   color: blue;
-  padding-right: 1em;
+  /*padding-right: 3rem;*/
 }
 
 section {
@@ -257,6 +261,15 @@ li.active {
 @media screen and (max-width: 768px) {
 	li.active {
 		border-bottom: none;
+	}
+
+	#mobileMenu > ul {
+		border-top: solid 1px black;
+		border-bottom: solid 1px black;
+		/*margin-top: 1.21rem;
+		margin-bottom: 2.42rem;*/
+		padding-top: 1.21rem;
+		padding-bottom: 1.21rem;
 	}
 }
 

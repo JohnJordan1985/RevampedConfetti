@@ -25,9 +25,9 @@
 <body class="container-fluid">
 	<!-- Start of navigation bar -->
 	<!-- Used class 'sticky-top' rather than 'fixed-top' as 'fixed-top' overlaps content below it -->
-	<nav class="row navbar navbar-expand-md sticky-top">
+	<nav class="row navbar navbar-expand-md navbar-light sticky-top">
 		<!-- Start of anchor tag containing logo -->
-		<a class="col-4" href="#">
+		<a class="navbar-brand col-3" href="#">
 			<!-- Logo -->
 			<img class="img-fluid d-md-none mh-50" src="img/logo-mark.svg" alt="The Revamped Confetti logo mark – a bouquet of flowers.">
 			<img class="img-fluid d-none d-md-block mh-66" src="img/logo-full.svg" alt="The Revamped Confetti Logo – a bouquet of flowers and the company name.">
@@ -36,13 +36,13 @@
 		<!-- End of anchor tag containing logo -->
 		<!-- Start of button that controls collapsable menu functionality -->
 		<!-- Constrained width of button element and aligned it to right using 'ml-auto' class, to right-align hamburger icon -->
-		<button class="col-8 navbar-toggler ml-auto text-right" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation" role="navigation">
-		    <span class="custom-toggler navbar-toggler-icon"></span>
+		<button class="navbar-toggler ml-auto text-right" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation" role="navigation">
+		    <span class="navbar-toggler-icon"></span>
 		</button>
 		<!-- End of button that controls collapsable menu functionality -->
 		<!-- Start of nav bar menu items, wrapped in a div for collapsable functionality -->
 		<!-- Start of wrapper div -->
-		<div id="mobileMenu" class="col collapse navbar-collapse">
+		<div id="mobileMenu" class="col collapse navbar-collapse pt-5 text-center">
 			<!-- Needed to add class 'ml-auto' to right-align menu options -->
 			<ul class="navbar-nav ml-auto">
 				<!-- Start of navigation-links -->
@@ -71,7 +71,7 @@
 
 	<!-- Start of jumbotron -->
 	<header class="row jumbotron mb-0 pt-0">
-		<div class="offset-md-1 col-md-5 col-xl-4 pt-3">
+		<div class="offset-md-1 col-md-5 col-xl-4 pt-5">
 			<!-- Start of headline -->
 			<h1 class="display">
 				<div class="">
@@ -95,7 +95,7 @@
 				<!-- Using Bootstrap display functionality along with custom breakpoints, to toggle visibility -->
 			</p>
 			<!-- <p class="row lead">This too, is also text about bland things as well.</p> -->
-			<button class="btn btn-block rc-pink">Sign-up Now</button>
+			<button class="btn btn-block rc-pink lead">Sign-up Now</button>
 			<a href="#me" id="me" class="nav-link col-12 text-center">Find out more</a>
 		</div>
 	</header>
@@ -167,7 +167,7 @@
 				    <small id="emailHelp" class="form-text text-muted">We’ll never share your email with anyone else.</small>
 				</div>
 				<!-- Start of button -->
-				<button type="submit" class="btn btn-block rc-pink">Sign-up to Ready Conetti</button>
+				<button type="submit" class="btn btn-block rc-pink lead">Submit Email</button>
 				<!-- End of button -->
 			</form>
 		</div>
