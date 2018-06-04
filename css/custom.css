@@ -15,6 +15,7 @@ section {
 	/* This padding is applied to all section elements to ensure content is left-aligned with jumbotron */
 	/* NB: This cost you 30 minutes, as you couldn't figure out why there was additional padding-left on sectoin elements!*/
 	/*padding-left: 32px;*/
+	margin-bottom: 1.5rem;
 }
 
 .nav-item {
@@ -87,7 +88,7 @@ h2.display {
 	font-size: 2.618rem;
 }
 
-.lead, .navbar-nav {
+.lead {
 	font-size: 1.618rem;
 }
 
@@ -160,7 +161,7 @@ h1, h2 {
 }
 
 body {
-	background-color: #CCC;
+	background-color: white;
 }
 
 .black {
@@ -169,7 +170,7 @@ body {
 }
 
 header > div {
-	background-color: rgba(255,255,255,0.7);
+	background-color: rgba(255,255,255,0.95);
 	border-bottom-right-radius: 30px;
 	border-bottom-left-radius: 30px;
 }
@@ -196,8 +197,16 @@ section {
 
 /* IMAGES */
 
+header {
+	background-image: url('../img/hero-little-warm.jpg');
+}
+
 img.min-400 {
-	min-height: 400px;
+	min-height: 350px;
+	max-height: 350px;
+	width: 100%;
+	display: flex;
+	flex: 1;
 }
 
 img.mh-50 {
@@ -221,7 +230,7 @@ img.mh-66 {
 
   	/* Background image is fixed in the viewport so that it doesn't move when
      the content's height is greater than the image's height */
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 
   	/* This is what makes the background image rescale based
      on the container's size */
@@ -241,8 +250,12 @@ button.btn.btn-block:hover {
 
 a.nav-link {
 	color: black;
-	padding-bottom: 0;
+	/*font-weight: 700;*/
+	letter-spacing: .175rem;
+}
 
+.navbar-light .navbar-nav .nav-item.active > a.nav-link {
+	color: black;
 }
 
 header a.nav-link {
@@ -255,7 +268,7 @@ header a.nav-link {
 }
 
 li.active {
-	border-bottom: solid 4px #000000;
+	border-bottom: solid 4px var(--rc-pink);
 }
 
 @media screen and (max-width: 768px) {
@@ -263,13 +276,23 @@ li.active {
 		border-bottom: none;
 	}
 
+	li {
+		font-size: 1.5rem;
+	}
+
 	#mobileMenu > ul {
 		border-top: solid 1px black;
 		border-bottom: solid 1px black;
 		/*margin-top: 1.21rem;
 		margin-bottom: 2.42rem;*/
-		padding-top: 1.21rem;
-		padding-bottom: 1.21rem;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+
+	.navbar-collapse {
+		/* These styles over-ride the 'pb-0' class applied to the 'nav' element, to add some padding to the collapsable menu on smaller screens*/
+		padding-bottom: 1.5rem;
+		padding-top: 1.5rem;
 	}
 }
 
