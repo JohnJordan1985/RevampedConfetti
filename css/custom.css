@@ -92,7 +92,7 @@ h2.display {
 	font-size: 1.618rem;
 }
 
-address {
+address, .navbar-nav {
 	font-size: 1rem;
 }
 
