@@ -250,7 +250,8 @@ button.btn.btn-block:hover {
 
 a.nav-link {
 	color: black;
-	/*font-weight: 700;*/
+}
+.navbar-nav a.nav-link {
 	letter-spacing: .175rem;
 }
 
