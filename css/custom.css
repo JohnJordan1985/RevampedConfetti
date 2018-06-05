@@ -20,7 +20,7 @@ section {
 	/* NB: This cost you 30 minutes, as you couldn't figure out why there was additional padding-left on sectoin elements!*/
 	/*padding-left: 32px;*/
 	/*margin-bottom: 1.5rem;*/
-	flex-basis: 300px;
+	/*flex-basis: 300px;*/
 }
 
 .nav-item {
