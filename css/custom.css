@@ -15,14 +15,6 @@ header > div {
 	margin-bottom: 1rem;
 }
 
-section {
-	/* This padding is applied to all section elements to ensure content is left-aligned with jumbotron */
-	/* NB: This cost you 30 minutes, as you couldn't figure out why there was additional padding-left on sectoin elements!*/
-	/*padding-left: 32px;*/
-	/*margin-bottom: 1.5rem;*/
-	/*flex-basis: 300px;*/
-}
-
 .nav-item {
 	margin-right: 10px;
 	margin-left: 10px;
@@ -212,11 +204,26 @@ header {
 }
 
 img.min-400 {
-	min-height: 350px;
-	max-height: 350px;
+	min-height: 320px;
+	max-height: 320px;
 	width: 100%;
 	display: flex;
 	flex: 1;
+}
+
+img.landing-images {
+	height: 100%;
+	width: 100%;
+	min-height: 400px;
+	max-height: 400px;
+}
+
+@media screen and (max-width: 767px) {
+	/* Restrict image size on smaller screens */
+	img.landing-images {
+		min-height: 320px;
+		max-height: 400px;
+	}
 }
 
 img.mh-50 {

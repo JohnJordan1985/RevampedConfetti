@@ -97,9 +97,10 @@
 	</header>
 	<!-- End of jumbotron -->
 	<!-- Start of first row -->
-	<section class="row align-items-center text-center rc-lightest-purple" id="first-row">
+	<section class="row align-items-stretch  text-center rc-lightest-purple" id="first-row">
 		<!-- Start of first row, first column -->
-		<div class="col-md-6 py-3">
+		<div class="col-md-6 my-5 py-5 my-md-0 py-md-0 align-self-center">
+			<!-- Making the flex child align in center is desirable, but need to remove margin/padding as causes alignment issues with image on medium layouts.  -->
 	        <h2 class="display">Wedding Stress?</h2>
 	        <p class="lead col-12 offset-lg-1 col-lg-10">
 	        	Planning your own wedding can be incredibly rewarding.
@@ -113,21 +114,21 @@
 		</div>
 		<!-- End of first row, first column -->
 		<!-- Start of first row, second column -->
-		<div class="col-md-6 show-g no-gutter">
+		<div class="col-md-6 no-gutter">
 			<!-- Applying 'd-flex' class makes div take up entire height available to it -->
-			<img class="img-fluid min-400" src="img/stress-warmer-resized.jpg" alt="A placeholder image">
+			<img class="img-fluid landing-images" src="img/stress-warmer-resized.jpg" alt="A placeholder image">
 		</div>
 		<!-- End of first row, second column -->
 	</section>
 	<!-- End of first row -->
 	<!-- Start of SECOND row -->
-	<section class="row flex-row-reverse align-items-center text-center rc-lighter-purple">
+	<section class="row flex-row-reverse align-items-stretch text-center rc-lighter-purple">
 		<!-- Start of SECOND row, first column -->
-		<div class="col-md-6 py-3">
+		<div class="col-md-6 align-self-center my-5 py-5 my-md-0 py-md-0 ">
 	        <h2 class="display">Wouldn’t it be great if?</h2>
 	        <p class="lead col-12 offset-lg-1 col-lg-10">
 	        	<!-- 'col-md-6' and 'mx-auto' classes center element on medium-up screens -->
-	        	You should be <span class="italic">enjoying</span> the build-up, not worrying about what you need to get done.
+	        	You should be <span class="italic">enjoying</span> the build-up to your big day, not worrying.
 	        </p>
 	        <p class="lead col-12 offset-lg-1 col-lg-10">
 	        	Imagine if there was a <span class="italic">free</span> service that made it all more manageable?
@@ -136,16 +137,18 @@
 		<!-- End of SECOND row, first column -->
 		<!-- Start of SECOND row, second column -->
 		<div class="col-md-6 show-p no-gutter">
-			<img class="img-fluid min-400" src="img/easier-way-less-warm.jpg" alt="A placeholder image">
+			<img class="img-fluid landing-images" src="img/easier-way-less-warm.jpg" alt="A placeholder image">
 		</div>
 		<!-- End of SECOND row, second column -->
 	</section>
 	<!-- End of SECOND row -->
 
 	<!-- Start of THIRD row -->
-	<section class="row align-items-center text-center rc-light-purple">
+	<section class="row align-items-stretch  text-center rc-light-purple">
+		<!-- 'Align-items-stretch' means images stretch to fill entire flex parent  -->
 		<!-- Start of THIRD row, first column -->
-		<div class="col-md-6 py-3">
+		<div class="col-md-6 my-5 py-5 my-md-0 py-md-0 align-self-center">
+			<!-- 'Align-self-center' keeps flex child in center of parent -->
 	        <h2 class="display">We can help!</h2>
 	        <p class="lead col-12 offset-lg-1 col-lg-10">
 	        	<!-- 'col-md-6' and 'mx-auto' classes center element on medium-up screens -->
@@ -158,7 +161,7 @@
 		<!-- End of THIRD row, first column -->
 		<!-- Start of THIRD row, second column -->
 		<div class="col-md-6 no-gutter">
-			<img class="img-fluid min-400" src="img/wedding-warmer.jpg" alt="A placeholder image">
+			<img class="img-fluid landing-images" src="img/wedding-warmer.jpg" alt="A placeholder image">
 		</div>
 		<!-- End of THIRD row, second column -->
 	</section>
