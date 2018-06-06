@@ -11,7 +11,7 @@ header > div {
 	/*padding-top:  2.42rem;*/
 }
 
-h1.display {
+.display, .lead, .margin-bottom {
 	margin-bottom: 1rem;
 }
 
