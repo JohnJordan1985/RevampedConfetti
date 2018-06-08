@@ -11,6 +11,11 @@ header > div {
 	/*padding-top:  2.42rem;*/
 }
 
+header.jumbotron {
+	/* Sets minimum height on jumbotron elements, so that content doesn't determine height */
+	min-height: 300px;
+}
+
 .display, .lead, .margin-bottom {
 	margin-bottom: 1rem;
 }
