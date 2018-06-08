@@ -13,7 +13,7 @@ header > div {
 
 header.jumbotron {
 	/* Sets minimum height on jumbotron elements, so that content doesn't determine height */
-	min-height: 300px;
+	min-height: 400px;
 }
 
 .display, .lead, .margin-bottom {
@@ -203,10 +203,13 @@ section {
 
 /* IMAGES */
 
-header {
+header.main-page {
 	background-image: url('../img/hero-little-warm.jpg');
 }
 
+header.services {
+	background-image: url('../img/let-us-help-h800.jpg');
+}
 img.min-400 {
 	min-height: 320px;
 	max-height: 320px;
