@@ -97,7 +97,7 @@
 	</header>
 	<!-- End of jumbotron -->
 	<!-- Start of first row -->
-	<section class="row align-items-stretch  text-center rc-lightest-purple" id="first-row">
+	<section class="row align-items-stretch  text-center rc-even-lightest-purple" id="first-row">
 		<!-- Start of first row, first column -->
 		<div class="col-md-6 my-5 py-5 my-md-0 py-md-0 align-self-center">
 			<!-- Making the flex child align in center is desirable, but need to remove margin/padding as causes alignment issues with image on medium layouts.  -->
@@ -122,7 +122,7 @@
 	</section>
 	<!-- End of first row -->
 	<!-- Start of SECOND row -->
-	<section class="row flex-row-reverse align-items-stretch text-center rc-lighter-purple">
+	<section class="row flex-row-reverse align-items-stretch text-center rc-lightest-purple">
 		<!-- Start of SECOND row, first column -->
 		<div class="col-md-6 align-self-center my-5 py-5 my-md-0 py-md-0 ">
 	        <h2 class="display">Wouldn’t it be great if?</h2>
@@ -144,7 +144,7 @@
 	<!-- End of SECOND row -->
 
 	<!-- Start of THIRD row -->
-	<section class="row align-items-stretch  text-center rc-light-purple">
+	<section class="row align-items-stretch  text-center rc-lighter-purple">
 		<!-- 'Align-items-stretch' means images stretch to fill entire flex parent  -->
 		<!-- Start of THIRD row, first column -->
 		<div class="col-md-6 my-5 py-5 my-md-0 py-md-0 align-self-center">
@@ -172,7 +172,7 @@
 		<div class="col-12 col-md-6 text-center my-5 py-5 rc-lighter-purple form-wrapper">
 			<h2 class="display">Sign-up Today!</h2>
 			<p class="lead col-12 offset-lg-1 col-lg-10">It’s completely <span class="italic">free.</span></p>
-			<form action="#" class="col-12 col-md-10 col-lg-8 mx-auto">
+			<form action="#" class="col-12 col-md-10 col-lg-8 mx-auto" id="sign-up-form">
 				<div class="form-group">
 				    <input type="email" class="form-control text-center" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
 				    <small id="emailHelp" class="form-text text-muted">We’ll never share your email with anyone else.</small>
@@ -191,11 +191,11 @@
 			<div class="lead">Our Services</div>
 			<!-- end line -->
 			<nav class="black footer-links d-flex justify-content-around flex-wrap margin-bottom">
-				<a href="#" class="mx-3 my-2">Legal</a>
-				<a href="#" class="mx-3 my-2">Budgets</a>
-				<a href="#" class="mx-3 my-2">Guest List</a>
-				<a href="#" class="mx-3 my-2">Suppliers</a>
-				<a href="#" class="mx-3 my-2">Venues</a>
+				<a href="pages/services.html#legal" class="mx-3 my-2">Legal</a>
+				<a href="pages/services.html#budgets" class="mx-3 my-2">Budgets</a>
+				<a href="pages/services.html#guest-list" class="mx-3 my-2">Guest List</a>
+				<a href="pages/services.html#suppliers" class="mx-3 my-2">Suppliers</a>
+				<a href="pages/services.html#venues" class="mx-3 my-2">Venues</a>
 			</nav>
 			<!-- end line -->
 			<div class="lead">Authorship Information</div>
@@ -215,5 +215,21 @@
     <script src="js/v1.14.0-popper.min.js"></script>
     <!-- Version 4.1.0 -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+    // This code displays an alert to user when they have successfully submitted the sign-up form
+    $(function(){
+        // Grab my sign-up-form by id and wait for 'submit' to happen
+        $('#sign-up-form').on('submit', function(){
+            alert('Thank you for trying to sign-up to “Ready Confetti”.\n'
+            	+ '\n'
+                + 'Unfortunately, this is just a test website, so you can not actually sign-up.\n'
+                + '\n'
+                + "Your details haven't gone anywhere, so there is no need to worry.\n"
+                + '\n'
+                + "Thanks again and I hope you liked the website!"
+            )
+        });
+    });
+    </script>
 </body>
 </html>
