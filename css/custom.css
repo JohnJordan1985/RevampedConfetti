@@ -186,9 +186,9 @@ body {
 	color: #FFFFFF;
 }
 
-header > div {
+.header-banner {
 	/* Had this semi-transparent, but made text hard to read */
-	background-color: #FFFFFF;
+	background-color: var(--rc-even-lightest-purple);
 	border-bottom-right-radius: 30px;
 	border-bottom-left-radius: 30px;
 }
@@ -216,7 +216,7 @@ section {
 /* IMAGES */
 
 header.main-page {
-	background-image: url('../img/hero-little-warm.jpg');
+	background-image: linear-gradient(rgba(256,256,256,0.75), rgba(256,256,256,0.75)), url('../img/hero-black-and-white.jpg');
 }
 
 header.services {
@@ -262,10 +262,11 @@ img.mh-50 {
 
 img.mh-66 {
 	/*custom class to restrict height of SVG logo-full */
-	max-height: 66px;
+	max-height: 55px !important;
 }
 
 .back-image{
+	/*background: linear-gradient(rgba(256,256,256,0.5), rgba(256,256,256,0.5));*/
 	/*Custom class to apply images as backgrounds*/
 
 	/* Background image is centered vertically and horizontally at all times */
