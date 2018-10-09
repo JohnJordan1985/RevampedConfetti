@@ -23,149 +23,161 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i" rel="stylesheet">
 </head>
 <!-- start of new piece -->
-<body class="container-fluid">
+<body class="">
 	<!-- Start of navigation bar -->
-	<!-- Used class 'sticky-top' rather than 'fixed-top' as 'fixed-top' overlaps content below it -->
-	<nav class="row navbar navbar-expand-md navbar-light sticky-top pb-0">
-		<!-- Start of anchor tag containing logo -->
-		<a class="navbar-brand col-9 col-md-4 mb-2 mb-md-0" href="#">
-			<!-- Logo -->
-			<!-- <img class="img-fluid d-md-none mh-50" src="img/logo-mark.svg" alt="The Revamped Confetti logo mark – a bouquet of flowers."> -->
-			<img class="img-fluid mh-66" src="../img/logo-full.svg" alt="The Revamped Confetti Logo.">
-			<!-- End logo -->
-		</a>
-		<!-- End of anchor tag containing logo -->
-		<!-- Start of button that controls collapsable menu functionality -->
-		<!-- Constrained width of button element and aligned it to right using 'ml-auto' class, to right-align hamburger icon -->
-		<button class="navbar-toggler ml-auto text-right" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation" role="navigation">
-		    <span class="navbar-toggler-icon"></span>
-		</button>
-		<!-- End of button that controls collapsable menu functionality -->
-		<!-- Start of nav bar menu items, wrapped in a div for collapsable functionality -->
-		<!-- Start of wrapper div -->
-		<div id="mobileMenu" class="col-12 col-md-8 collapse navbar-collapse text-center">
-			<!-- Needed to add class 'ml-auto' to right-align menu options -->
-			<ul class="navbar-nav ml-auto">
-				<!-- Start of navigation-links -->
-				<li class="nav-item">
-					<a href="../index.html" class="nav-link">
-						Home
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="services.html" class="nav-link">Services</a>
-				</li>
-				<li class="nav-item">
-					<a href="aboutus.html" class="nav-link">About Us</a>
-				</li>
-				<li class="nav-item active">
-					<a href="#" class="nav-link">Contact</a>
-				</li>
-				<!-- End of navigation-links -->
-				<!-- Items are right-aligned using flexbox 'justify-content-end' class. Needed to use full row width -->
-			</ul>
-			<!-- End of nav bar menu items -->
-		</div>
-		<!-- End of wrapper div-->
-	</nav>
-	<!-- End of navigation bar -->
-	<!-- Start of jumbotron -->
-	<!-- Background-img set using 'contactus' class, see CSS -->
-	<header class="row jumbotron contactus py-0 back-image mb-0 no-gutter">
-		<!-- Padding-top of '0' to start overlay under nav-bar -->
-		<div class="offset-md-1 col-md-5 col-xl-4 pt-5 px-5 mb-3 header-banner">
-			<!-- Outer wrapper contains white overlay -->
-			<div class="col-md-12 mb-5">
-				<!-- Inner wrapper to constrain line length -->
-				<!-- Start of headline -->
-				<h1 class="display">
-					<!-- This div is purely for styling purposes - see CSS -->
-					<div>
-						Need to get in touch?
-					</div>
-				</h1>
-				<!-- End of headline -->
-				<!-- 'Lead' class applied to paragraph to add emphasis -->
-				<p class="lead">
-					If there is something you’d like to ask, please fill out the form below.
-				</p>
-				<p class="lead">
-					One of our team will be in touch within one working day.
-				</p>
+	<div class="container-fluid">
+		<!-- Used class 'sticky-top' rather than 'fixed-top' as 'fixed-top' overlaps content below it -->
+		<nav class="row navbar navbar-expand-md navbar-light sticky-top pb-0">
+			<!-- Start of anchor tag containing logo -->
+			<a class="navbar-brand col-9 col-md-4 mb-2 mb-md-0" href="#">
+				<!-- Logo -->
+				<!-- <img class="img-fluid d-md-none mh-50" src="img/logo-mark.svg" alt="The Revamped Confetti logo mark – a bouquet of flowers."> -->
+				<img class="img-fluid mh-66" src="../img/logo-full.svg" alt="The Revamped Confetti Logo.">
+				<!-- End logo -->
+			</a>
+			<!-- End of anchor tag containing logo -->
+			<!-- Start of button that controls collapsable menu functionality -->
+			<!-- Constrained width of button element and aligned it to right using 'ml-auto' class, to right-align hamburger icon -->
+			<button class="navbar-toggler ml-auto text-right" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation" role="navigation">
+			    <span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- End of button that controls collapsable menu functionality -->
+			<!-- Start of nav bar menu items, wrapped in a div for collapsable functionality -->
+			<!-- Start of wrapper div -->
+			<div id="mobileMenu" class="col-12 col-md-8 collapse navbar-collapse text-center">
+				<!-- Needed to add class 'ml-auto' to right-align menu options -->
+				<ul class="navbar-nav ml-auto">
+					<!-- Start of navigation-links -->
+					<li class="nav-item">
+						<a href="../index.html" class="nav-link">
+							Home
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="services.html" class="nav-link">Services</a>
+					</li>
+					<li class="nav-item">
+						<a href="aboutus.html" class="nav-link">About Us</a>
+					</li>
+					<li class="nav-item active">
+						<a href="#" class="nav-link">Contact</a>
+					</li>
+					<!-- End of navigation-links -->
+					<!-- Items are right-aligned using flexbox 'justify-content-end' class. Needed to use full row width -->
+				</ul>
+				<!-- End of nav bar menu items -->
 			</div>
-			<!-- end inner wrapper -->
-		</div>
-		<!-- end outer wrapper -->
-	</header>
-	<!-- End of jumbotron -->
-	<!-- Start of FORM row -->
-	<section class="row justify-content-center rc-lightest-purple">
-		<div class="col-12 col-md-6 text-center my-5 py-5 rc-lighter-purple form-wrapper">
-			<h2 class="display">Contact Us</h2>
-			<p class="lead col-12 offset-lg-1 col-lg-10">
-				Let us know what you have to say!
-			</p>
-			<form action="#" id="contact-form" method="get" name="contact-form">
-				<div class="form-group">
-					<label for="input-first-name">Your First Name</label> <input class="form-control" id="input-first-name" pattern="^[a-zA-Z]+$" placeholder="Enter your first name" required="" type="text"><!-- This expression matches only strings that consist of one or more letters only, as you would expect in a name. Special characters not accepted. -->
+			<!-- End of wrapper div-->
+		</nav>
+		<!-- End of navigation bar -->
+	</div>
+
+	<div class="container">
+		<!-- Start of jumbotron -->
+		<!-- Background-img set using 'contactus' class, see CSS -->
+		<header class="row jumbotron contactus py-0 back-image mb-0 no-gutter">
+			<!-- Padding-top of '0' to start overlay under nav-bar -->
+			<div class="offset-md-1 col-md-5 col-xl-4 pt-5 px-5 mb-3 header-banner">
+				<!-- Outer wrapper contains white overlay -->
+				<div class="col-md-12 mb-5">
+					<!-- Inner wrapper to constrain line length -->
+					<!-- Start of headline -->
+					<h1 class="display">
+						<!-- This div is purely for styling purposes - see CSS -->
+						<div>
+							Need to get in touch?
+						</div>
+					</h1>
+					<!-- End of headline -->
+					<!-- 'Lead' class applied to paragraph to add emphasis -->
+					<p class="lead">
+						If there is something you’d like to ask, please fill out the form below.
+					</p>
+					<p class="lead">
+						One of our team will be in touch within one working day.
+					</p>
 				</div>
-				<!-- end of form group -->
-				<!-- .form-group added to input elements for styling purposes -->
+				<!-- end inner wrapper -->
+			</div>
+			<!-- end outer wrapper -->
+		</header>
+		<!-- End of jumbotron -->
+		<!-- Start of FORM row -->
+		<section class="row justify-content-center rc-lightest-purple">
+			<div class="col-12 col-md-6 text-center my-5 py-5 rc-lighter-purple form-wrapper">
+				<h2 class="display">Contact Us</h2>
+				<p class="lead col-12 offset-lg-1 col-lg-10">
+					Let us know what you have to say!
+				</p>
+				<form action="#" id="contact-form" method="get" name="contact-form">
+					<div class="form-group">
+						<label for="input-first-name">Your First Name</label> <input class="form-control" id="input-first-name" pattern="^[a-zA-Z]+$" placeholder="Enter your first name" required="" type="text"><!-- This expression matches only strings that consist of one or more letters only, as you would expect in a name. Special characters not accepted. -->
+					</div>
+					<!-- end of form group -->
+					<!-- .form-group added to input elements for styling purposes -->
 
 
-				<div class="form-group">
-					<label for="input-surname">Your Surname</label> <input class="form-control" id="input-surname" pattern="^[a-zA-Z]+$" placeholder="Enter your surname" required="" type="text"><!-- This expression matches only strings that consist of one or more letters only, as you would expect in a name. Special characters not accepted. -->
-				</div>
-				<!-- end of form group -->
-				<!-- .form-group added to input elements for styling purposes -->
+					<div class="form-group">
+						<label for="input-surname">Your Surname</label> <input class="form-control" id="input-surname" pattern="^[a-zA-Z]+$" placeholder="Enter your surname" required="" type="text"><!-- This expression matches only strings that consist of one or more letters only, as you would expect in a name. Special characters not accepted. -->
+					</div>
+					<!-- end of form group -->
+					<!-- .form-group added to input elements for styling purposes -->
 
 
-				<div class="form-group">
-					<label for="input-email">Your E-mail</label> <input class="form-control" id="input-email" placeholder="Enter email" required="" type="email">
-				</div>
-				<!-- end of form group -->
-				<!-- This next part creates a radio button group -->
-				<!-- .form-group added to input elements for styling purposes -->
-				<!-- Text area input-->
+					<div class="form-group">
+						<label for="input-email">Your E-mail</label> <input class="form-control" id="input-email" placeholder="Enter email" required="" type="email">
+					</div>
+					<!-- end of form group -->
+					<!-- This next part creates a radio button group -->
+					<!-- .form-group added to input elements for styling purposes -->
+					<!-- Text area input-->
 
 
-				<div class="form-group mb-5">
-					<label for="user-text">How can we help?</label>
+					<div class="form-group mb-5">
+						<label for="user-text">How can we help?</label>
 
-					<textarea class="form-control" id="user-text" placeholder="Type your question, complaint or compliment here" required=""></textarea>
-				</div>
-				<!-- end of Text area input -->
-				<!-- Start of button -->
-				<button type="submit" class="btn rc-pink lead px-5">Submit</button>
-				<!-- End of button -->
-			</form>
-		</div>
-	</section>
-	<!-- End of FORM row -->
-	<!-- Start of Footer -->
-	<footer class="row text-center black">
-		<!-- Start of wrapper div -->
-		<div class="wrapper col-12 mt-5">
-			<div class="lead">Our Services</div>
-			<!-- end line -->
-			<nav class="black footer-links d-flex justify-content-around flex-wrap margin-bottom">
-				<a href="services.html#legal" class="mx-3 my-2">Legal</a>
-				<a href="services.html#budgets" class="mx-3 my-2">Budgets</a>
-				<a href="services.html#guest-list" class="mx-3 my-2">Guest List</a>
-				<a href="services.html#suppliers" class="mx-3 my-2">Suppliers</a>
-				<a href="services.html#venues" class="mx-3 my-2">Venues</a>
-			</nav>
-			<!-- end line -->
-			<div class="lead">Authorship Information</div>
-			<!-- end line -->
-			<address class="">
-				This “Ready Confetti” website was created by John Jordan during May and June 2018. <br/>© copyright <span id="year">2018</span> John Jordan.
-			</address>
-			<!-- end line -->
-		</div>
-		<!-- End of wrapper div -->
-	</footer>
-	<!-- End of Footer  -->
+						<textarea class="form-control" id="user-text" placeholder="Type your question, complaint or compliment here" required=""></textarea>
+					</div>
+					<!-- end of Text area input -->
+					<!-- Start of button -->
+					<button type="submit" class="btn rc-pink lead px-5">Submit</button>
+					<!-- End of button -->
+				</form>
+			</div>
+		</section>
+		<!-- End of FORM row -->
+	</div>
+
+	<div class="container-fluid">
+		<!-- Start of Footer -->
+		<footer class="row text-center black">
+			<!-- Start of wrapper div -->
+			<div class="wrapper col-12 mt-5">
+				<div class="lead">Our Services</div>
+				<!-- end line -->
+				<nav class="black footer-links d-flex justify-content-around flex-wrap margin-bottom">
+					<a href="services.html#legal" class="mx-3 my-2">Legal</a>
+					<a href="services.html#budgets" class="mx-3 my-2">Budgets</a>
+					<a href="services.html#guest-list" class="mx-3 my-2">Guest List</a>
+					<a href="services.html#suppliers" class="mx-3 my-2">Suppliers</a>
+					<a href="services.html#venues" class="mx-3 my-2">Venues</a>
+				</nav>
+				<!-- end line -->
+				<div class="lead">Authorship Information</div>
+				<!-- end line -->
+				<address class="">
+					This “Ready Confetti” website was created by John Jordan during May and June 2018. <br/>© copyright <span id="year">2018</span> John Jordan.
+				</address>
+				<!-- end line -->
+			</div>
+			<!-- End of wrapper div -->
+		</footer>
+		<!-- End of Footer  -->
+	</div>
+
+
+
+
 
 	<!-- Local copies of JavaScript files. jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../js/jquery-3.3.1.slim.min.js"></script>

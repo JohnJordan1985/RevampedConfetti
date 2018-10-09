@@ -23,181 +23,195 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i" rel="stylesheet">
 </head>
 <!-- start of new piece -->
-<body class="container">
+<body class="">
 	<!-- Start of navigation bar -->
-	<!-- Used class 'sticky-top' rather than 'fixed-top' as 'fixed-top' overlaps content below it -->
-	<nav class="row navbar navbar-expand-md navbar-light sticky-top pb-0">
-		<!-- Start of anchor tag containing logo -->
-		<a class="navbar-brand col-9 col-md-4 mb-2 mb-md-0" href="#">
-			<!-- Logo -->
-			<!-- <img class="img-fluid d-md-none mh-50" src="img/logo-mark.svg" alt="The Revamped Confetti logo mark – a bouquet of flowers."> -->
-			<img class="img-fluid mh-66" src="../img/logo-full.svg" alt="The Revamped Confetti Logo.">
-			<!-- End logo -->
-		</a>
-		<!-- End of anchor tag containing logo -->
-		<!-- Start of button that controls collapsable menu functionality -->
-		<!-- Constrained width of button element and aligned it to right using 'ml-auto' class, to right-align hamburger icon -->
-		<button class="navbar-toggler ml-auto text-right" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation" role="navigation">
-		    <span class="navbar-toggler-icon"></span>
-		</button>
-		<!-- End of button that controls collapsable menu functionality -->
-		<!-- Start of nav bar menu items, wrapped in a div for collapsable functionality -->
-		<!-- Start of wrapper div -->
-		<div id="mobileMenu" class="col-12 col-md-8 collapse navbar-collapse text-center">
-			<!-- Needed to add class 'ml-auto' to right-align menu options -->
-			<ul class="navbar-nav ml-auto">
-				<!-- Start of navigation-links -->
-				<li class="nav-item">
-					<a href="../index.html" class="nav-link">
-						Home
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="services.html" class="nav-link">Services</a>
-				</li>
-				<li class="nav-item active">
-					<a href="#" class="nav-link">About Us</a>
-				</li>
-				<li class="nav-item">
-					<a href="contact.html" class="nav-link">Contact</a>
-				</li>
-				<!-- End of navigation-links -->
-				<!-- Items are right-aligned using flexbox 'justify-content-end' class. Needed to use full row width -->
-			</ul>
-			<!-- End of nav bar menu items -->
-		</div>
-		<!-- End of wrapper div-->
-	</nav>
-	<!-- End of navigation bar -->
-	<!-- Start of jumbotron -->
-	<!-- Background-img set using 'aboutus' class, see CSS -->
-	<header class="row jumbotron aboutus py-0 back-image mb-0 no-gutter">
-		<!-- Padding-top of '0' to start overlay under nav-bar -->
-		<div class="offset-md-1 col-md-5 col-xl-4 pt-5 px-5 mb-3 header-banner">
-			<!-- Outer wrapper contains white overlay -->
-			<div class="col-md-12 mb-5">
-				<!-- Inner wrapper to constrain line length -->
-				<!-- Start of headline -->
-				<h1 class="display">
-					<!-- This div is purely for styling purposes - see CSS -->
-					<div>
-						Why We Do What We Do.
-					</div>
-				</h1>
-				<!-- End of headline -->
-				<!-- 'Lead' class applied to paragraph to add emphasis -->
-				<p class="lead">
-					Having planned our own weddings, we know that it can be a truly rewarding experience.
-				</p>
-				<p class="lead">
-					But, it is not without its challenges!
-				</p>
+	<div class="container-fluid">
+		<!-- Used class 'sticky-top' rather than 'fixed-top' as 'fixed-top' overlaps content below it -->
+		<nav class="row navbar navbar-expand-md navbar-light sticky-top pb-0">
+			<!-- Start of anchor tag containing logo -->
+			<a class="navbar-brand col-9 col-md-4 mb-2 mb-md-0" href="#">
+				<!-- Logo -->
+				<!-- <img class="img-fluid d-md-none mh-50" src="img/logo-mark.svg" alt="The Revamped Confetti logo mark – a bouquet of flowers."> -->
+				<img class="img-fluid mh-66" src="../img/logo-full.svg" alt="The Revamped Confetti Logo.">
+				<!-- End logo -->
+			</a>
+			<!-- End of anchor tag containing logo -->
+			<!-- Start of button that controls collapsable menu functionality -->
+			<!-- Constrained width of button element and aligned it to right using 'ml-auto' class, to right-align hamburger icon -->
+			<button class="navbar-toggler ml-auto text-right" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation" role="navigation">
+			    <span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- End of button that controls collapsable menu functionality -->
+			<!-- Start of nav bar menu items, wrapped in a div for collapsable functionality -->
+			<!-- Start of wrapper div -->
+			<div id="mobileMenu" class="col-12 col-md-8 collapse navbar-collapse text-center">
+				<!-- Needed to add class 'ml-auto' to right-align menu options -->
+				<ul class="navbar-nav ml-auto">
+					<!-- Start of navigation-links -->
+					<li class="nav-item">
+						<a href="../index.html" class="nav-link">
+							Home
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="services.html" class="nav-link">Services</a>
+					</li>
+					<li class="nav-item active">
+						<a href="#" class="nav-link">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link">Contact</a>
+					</li>
+					<!-- End of navigation-links -->
+					<!-- Items are right-aligned using flexbox 'justify-content-end' class. Needed to use full row width -->
+				</ul>
+				<!-- End of nav bar menu items -->
 			</div>
-			<!-- end inner wrapper -->
-		</div>
-		<!-- end outer wrapper -->
-	</header>
-	<!-- End of jumbotron -->
-	<!-- Start of first row -->
-	<section class="row align-items-center  text-center rc-even-lightest-purple l-section" id="first-row">
-		<!-- Start of first row, first column -->
-		<div class="col-md-6 my-5 p-5 my-md-0 py-md-0 align-self-center">
-			<!-- Making the flex child align in center is desirable, but need to remove margin/padding as causes alignment issues with image on medium layouts.  -->
-	        <h2 class="display">The Reason for “Ready”</h2>
-	        <p class="lead col-12 offset-md-1 col-md-10">
-	        	We wanted to pass on our experiences, to help other people who were planning their own weddings.
-	        </p>
-	        <p class="lead col-12 offset-md-1 col-md-10">
-	        	We wanted to create a site, which would tell people all the things we <span class="italic">wished </span>we knew first-time around.
-	        </p>
-		</div>
-		<!-- End of first row, first column -->
-		<!-- Start of first row, second column -->
-		<div class="col-md-6 no-gutter">
-			<!-- Applying 'd-flex' class makes div take up entire height available to it -->
-			<a href="https://unsplash.com/@danieleriggifotovideo?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank">
-				<img class="img-fluid landing-images rotate-right" src="../img/blackboard-planning.jpg" alt="An image of blackboard with post-it notes on it, showing different social events.">
-			</a>
+			<!-- End of wrapper div-->
+		</nav>
+		<!-- End of navigation bar -->
+
+	</div>
+
+	<div class="container">
+		<!-- Start of jumbotron -->
+		<!-- Background-img set using 'aboutus' class, see CSS -->
+		<header class="row jumbotron aboutus py-0 back-image mb-0 no-gutter">
+			<!-- Padding-top of '0' to start overlay under nav-bar -->
+			<div class="offset-md-1 col-md-5 col-xl-4 pt-5 px-5 mb-3 header-banner">
+				<!-- Outer wrapper contains white overlay -->
+				<div class="col-md-12 mb-5">
+					<!-- Inner wrapper to constrain line length -->
+					<!-- Start of headline -->
+					<h1 class="display">
+						<!-- This div is purely for styling purposes - see CSS -->
+						<div>
+							Why We Do What We Do.
+						</div>
+					</h1>
+					<!-- End of headline -->
+					<!-- 'Lead' class applied to paragraph to add emphasis -->
+					<p class="lead">
+						Having planned our own weddings, we know that it can be a truly rewarding experience.
+					</p>
+					<p class="lead">
+						But, it is not without its challenges!
+					</p>
+				</div>
+				<!-- end inner wrapper -->
+			</div>
+			<!-- end outer wrapper -->
+		</header>
+		<!-- End of jumbotron -->
+		<!-- Start of first row -->
+		<section class="row align-items-center  text-center rc-even-lightest-purple l-section" id="first-row">
+			<!-- Start of first row, first column -->
+			<div class="col-md-6 my-5 p-5 my-md-0 py-md-0 align-self-center">
+				<!-- Making the flex child align in center is desirable, but need to remove margin/padding as causes alignment issues with image on medium layouts.  -->
+		        <h2 class="display">The Reason for “Ready”</h2>
+		        <p class="lead col-12 offset-md-1 col-md-10">
+		        	We wanted to pass on our experiences, to help other people who were planning their own weddings.
+		        </p>
+		        <p class="lead col-12 offset-md-1 col-md-10">
+		        	We wanted to create a site, which would tell people all the things we <span class="italic">wished </span>we knew first-time around.
+		        </p>
+			</div>
+			<!-- End of first row, first column -->
+			<!-- Start of first row, second column -->
+			<div class="col-md-6 no-gutter">
+				<!-- Applying 'd-flex' class makes div take up entire height available to it -->
+				<a href="https://unsplash.com/@danieleriggifotovideo?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank">
+					<img class="img-fluid landing-images rotate-right" src="../img/blackboard-planning.jpg" alt="An image of blackboard with post-it notes on it, showing different social events.">
+				</a>
 
 
-		</div>
-		<!-- End of first row, second column -->
-	</section>
-	<!-- End of first row -->
-	<!-- Start of SECOND row -->
-	<section class="row flex-row-reverse align-items-center text-center rc-lightest-purple l-section">
-		<!-- Start of SECOND row, first column -->
-		<div class="col-md-6 align-self-center my-5 p-5 my-md-0 py-md-0 ">
-	        <h2 class="display">What We Do</h2>
-	        <div class="col-12 offset-md-1 col-md-10">
-	        	<p class="lead ">
-	        		<!-- 'col-md-6' and 'mx-auto' classes center element on medium-up screens -->
-	        		We give you a comprehensive wedding planning resource, which provides all the information you need.
-	        	</p>
-	        	<p class="lead ">
-	        		We continually review our advice and trusted suppliers, to ensure that everything is both up-to-date and of the highest quality.
-	        	</p>
-	        </div>
-	        <!-- end wrapper div for spacing of paragraphs -->
-		</div>
-		<!-- End of SECOND row, first column -->
-		<!-- Start of SECOND row, second column -->
-		<div class="col-md-6 no-gutter">
-			<img class="img-fluid landing-images rotate-left" src="../img/what-we-do-500x300.jpg" alt="An image of a bride and groom's footwear.">
-		</div>
-		<!-- End of SECOND row, second column -->
-	</section>
-	<!-- End of SECOND row -->
-	<!-- Start of THIRD row -->
-	<section class="row align-items-center  text-center rc-even-lightest-purple l-section" id="THIRD-row">
-		<!-- Start of THIRD row, THIRD column -->
-		<div class="col-md-6 my-5 p-5 my-md-0 py-md-0 align-self-center">
-			<!-- Making the flex child align in center is desirable, but need to remove margin/padding as causes alignment issues with image on medium layouts.  -->
-	        <h2 class="display">Who Are We?</h2>
-	        <p class="lead col-12 offset-md-1 col-md-10">
-	        	We’re a small team based here in the UK, who have personal and professional experience of planning over <span class="italic">sixty </span>weddings.
-	        </p>
-	        <p class="lead col-12 offset-md-1 col-md-10">
-	        	We’ve got designers, web developers and professional wedding planners – all the skills you need to make a modern wedding successful!
-	        </p>
-		</div>
-		<!-- End of THIRD row, THIRD column -->
-		<!-- Start of THIRD row, second column -->
-		<div class="col-md-6 no-gutter">
-			<!-- Applying 'd-flex' class makes div take up entire height available to it -->
-			<a href="https://unsplash.com/@danieleriggifotovideo?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank">
-				<img class="img-fluid landing-images rotate-right" src="../img/who-we-are-500x300.jpg" alt="An image of several people fist-bumping in a design office.">
-			</a>
+			</div>
+			<!-- End of first row, second column -->
+		</section>
+		<!-- End of first row -->
+		<!-- Start of SECOND row -->
+		<section class="row flex-row-reverse align-items-center text-center rc-lightest-purple l-section">
+			<!-- Start of SECOND row, first column -->
+			<div class="col-md-6 align-self-center my-5 p-5 my-md-0 py-md-0 ">
+		        <h2 class="display">What We Do</h2>
+		        <div class="col-12 offset-md-1 col-md-10">
+		        	<p class="lead ">
+		        		<!-- 'col-md-6' and 'mx-auto' classes center element on medium-up screens -->
+		        		We give you a comprehensive wedding planning resource, which provides all the information you need.
+		        	</p>
+		        	<p class="lead ">
+		        		We continually review our advice and trusted suppliers, to ensure that everything is both up-to-date and of the highest quality.
+		        	</p>
+		        </div>
+		        <!-- end wrapper div for spacing of paragraphs -->
+			</div>
+			<!-- End of SECOND row, first column -->
+			<!-- Start of SECOND row, second column -->
+			<div class="col-md-6 no-gutter">
+				<img class="img-fluid landing-images rotate-left" src="../img/what-we-do-500x300.jpg" alt="An image of a bride and groom's footwear.">
+			</div>
+			<!-- End of SECOND row, second column -->
+		</section>
+		<!-- End of SECOND row -->
+		<!-- Start of THIRD row -->
+		<section class="row align-items-center  text-center rc-even-lightest-purple l-section" id="THIRD-row">
+			<!-- Start of THIRD row, THIRD column -->
+			<div class="col-md-6 my-5 p-5 my-md-0 py-md-0 align-self-center">
+				<!-- Making the flex child align in center is desirable, but need to remove margin/padding as causes alignment issues with image on medium layouts.  -->
+		        <h2 class="display">Who Are We?</h2>
+		        <p class="lead col-12 offset-md-1 col-md-10">
+		        	We’re a small team based here in the UK, who have personal and professional experience of planning over <span class="italic">sixty </span>weddings.
+		        </p>
+		        <p class="lead col-12 offset-md-1 col-md-10">
+		        	We’ve got designers, web developers and professional wedding planners – all the skills you need to make a modern wedding successful!
+		        </p>
+			</div>
+			<!-- End of THIRD row, THIRD column -->
+			<!-- Start of THIRD row, second column -->
+			<div class="col-md-6 no-gutter">
+				<!-- Applying 'd-flex' class makes div take up entire height available to it -->
+				<a href="https://unsplash.com/@danieleriggifotovideo?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank">
+					<img class="img-fluid landing-images rotate-right" src="../img/who-we-are-500x300.jpg" alt="An image of several people fist-bumping in a design office.">
+				</a>
 
 
-		</div>
-		<!-- End of THIRD row, second column -->
-	</section>
-	<!-- End of THIRD row -->
-	<!-- Start of Footer -->
-	<footer class="row text-center black">
-		<!-- Start of wrapper div -->
-		<div class="wrapper col-12 mt-5">
-			<div class="lead">Our Services</div>
-			<!-- end line -->
-			<nav class="black footer-links d-flex justify-content-around flex-wrap margin-bottom">
-				<a href="services.html#legal" class="mx-3 my-2">Legal</a>
-				<a href="services.html#budgets" class="mx-3 my-2">Budgets</a>
-				<a href="services.html#guest-list" class="mx-3 my-2">Guest List</a>
-				<a href="services.html#suppliers" class="mx-3 my-2">Suppliers</a>
-				<a href="services.html#venues" class="mx-3 my-2">Venues</a>
-			</nav>
-			<!-- end line -->
-			<div class="lead">Authorship Information</div>
-			<!-- end line -->
-			<address class="">
-				This “Ready Confetti” website was created by John Jordan during May and June 2018. <br/>© copyright <span id="year">2018</span> John Jordan.
-			</address>
-			<!-- end line -->
-		</div>
-		<!-- End of wrapper div -->
-	</footer>
-	<!-- End of Footer  -->
+			</div>
+			<!-- End of THIRD row, second column -->
+		</section>
+		<!-- End of THIRD row -->
+
+	</div>
+
+	<div class="container-fluid">
+		<!-- Start of Footer -->
+		<footer class="row text-center black">
+			<!-- Start of wrapper div -->
+			<div class="wrapper col-12 mt-5">
+				<div class="lead">Our Services</div>
+				<!-- end line -->
+				<nav class="black footer-links d-flex justify-content-around flex-wrap margin-bottom">
+					<a href="services.html#legal" class="mx-3 my-2">Legal</a>
+					<a href="services.html#budgets" class="mx-3 my-2">Budgets</a>
+					<a href="services.html#guest-list" class="mx-3 my-2">Guest List</a>
+					<a href="services.html#suppliers" class="mx-3 my-2">Suppliers</a>
+					<a href="services.html#venues" class="mx-3 my-2">Venues</a>
+				</nav>
+				<!-- end line -->
+				<div class="lead">Authorship Information</div>
+				<!-- end line -->
+				<address class="">
+					This “Ready Confetti” website was created by John Jordan during May and June 2018. <br/>© copyright <span id="year">2018</span> John Jordan.
+				</address>
+				<!-- end line -->
+			</div>
+			<!-- End of wrapper div -->
+		</footer>
+		<!-- End of Footer  -->
+
+	</div>
+
+
+
 
 	<!-- Local copies of JavaScript files. jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../js/jquery-3.3.1.slim.min.js"></script>
