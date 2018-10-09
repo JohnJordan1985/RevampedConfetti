@@ -23,13 +23,13 @@
 <body class="">
 	<!-- Start of navigation bar -->
 	<!-- Used class 'sticky-top' rather than 'fixed-top' as 'fixed-top' overlaps content below it -->
-	<nav class="container-fluid">
-		<div class="row navbar navbar-expand-md navbar-light sticky-top pb-0">
+
+		<nav class="navbar navbar-expand-md navbar-light sticky-top pb-0">
 			<!-- Start of anchor tag containing logo -->
-			<a class="navbar-brand col-9 col-md-4 mb-2 mb-md-0" href="#">
+			<a class="navbar-brand  mb-2 mb-md-0 ml-3" href="#">
 				<!-- Logo -->
-				<!-- <img class="img-fluid d-md-none mh-50" src="img/logo-mark.svg" alt="The Revamped Confetti logo mark – a bouquet of flowers."> -->
-				<img class="img-fluid mh-66" src="img/logo-full.svg" alt="The Revamped Confetti Logo.">
+				<img class="img-fluid d-md-none mh-50" src="img/logo-mark.svg" alt="The Revamped Confetti logo mark – a bouquet of flowers." width="64">
+				<img class="img-fluid mh-66 d-none d-md-block" src="img/logo-full.svg" alt="The Revamped Confetti Logo." width="320">
 				<!-- End logo -->
 			</a>
 			<!-- End of anchor tag containing logo -->
@@ -41,7 +41,7 @@
 			<!-- End of button that controls collapsable menu functionality -->
 			<!-- Start of nav bar menu items, wrapped in a div for collapsable functionality -->
 			<!-- Start of wrapper div -->
-			<div id="mobileMenu" class="col-12 col-md-8 collapse navbar-collapse text-center">
+			<div id="mobileMenu" class=" collapse navbar-collapse text-center">
 				<!-- Needed to add class 'ml-auto' to right-align menu options -->
 				<ul class="navbar-nav ml-auto">
 					<!-- Start of navigation-links -->
@@ -65,16 +65,15 @@
 				<!-- End of nav bar menu items -->
 			</div>
 			<!-- End of wrapper div-->
-		</div>
+		</nav>
 		<!-- End of navigation bar -->
 
-	</nav>
-
-
-	<div class="container">
-		<!-- Start of jumbotron -->
-		<header class="row main-page jumbotron pt-0 back-image text-center mb-0">
-			<div class="offset-md-1 col-md-5 col-xl-4 pt-5 mb-3 header-banner">
+	<!-- Start of jumbotron -->
+	<header class="main-page jumbotron pt-0 back-image text-center mb-0">
+		<!-- start bootstrap wrapping content -->
+		<div class="container">
+			<div class="row">
+				<div class=" col-md-5 col-xl-4 pt-5 mb-3 header-banner">
 					<!-- Outer wrapper contains white overlay -->
 					<div class="col-md-12 mb-3">
 						<!-- Start of headline. Divs used for newline wrapping.  -->
@@ -103,99 +102,126 @@
 						<a href="#form-gap" class="btn rc-pink lead px-5">Sign-up Now</a>
 						<a href="#me" id="me" class="nav-link col-12 text-center">Find out more</a>
 					</div>
+				</div>
 			</div>
+			<!-- end row wrapper -->
+		</div>
+		<!-- end bootstrap wrapping content -->
 
-		</header>
-		<!-- End of jumbotron -->
-		<!-- Start of first row -->
-		<section class="row align-items-stretch  text-center rc-lighter-purple" id="first-row">
-			<!-- Start of first row, first column -->
-			<div class="col-md-6 my-5 py-5 my-md-0 py-md-0 align-self-center">
-				<!-- Making the flex child align in center is desirable, but need to remove margin/padding as causes alignment issues with image on medium layouts.  -->
-		        <h2 class="display">Wedding Stress?</h2>
-		        <p class="lead col-12 offset-lg-1 col-lg-10">
-		        	Planning your own wedding can be incredibly rewarding.
-		        </p>
-		        <p class="lead col-12 offset-lg-1 col-lg-10">
-		        	But.
-		        </p>
-		        <p class="lead col-12 offset-lg-1 col-lg-10">
-		        	Doing it all yourself can be <span class="italic">hard</span>.
-		        </p>
+	</header>
+	<!-- End of jumbotron -->
+	<!-- Start of first row -->
+	<section class="rc-lighter-purple l-section" id="first-row">
+		<div class="container ">
+			<div class="row align-items-stretch  text-center">
+				<!-- Start of first row, first column -->
+				<div class="col-md-6 my-5 py-5 my-md-0 py-md-0 align-self-center l-limited--width">
+					<!-- Making the flex child align in center is desirable, but need to remove margin/padding as causes alignment issues with image on medium layouts.  -->
+			        <h2 class="display">Wedding Stress?</h2>
+			        <p class="lead col-12 offset-lg-1 col-lg-10">
+			        	Planning your own wedding can be incredibly rewarding.
+			        </p>
+			        <p class="lead col-12 offset-lg-1 col-lg-10">
+			        	But.
+			        </p>
+			        <p class="lead col-12 offset-lg-1 col-lg-10">
+			        	Doing it all yourself can be <span class="italic">hard</span>.
+			        </p>
+				</div>
+				<!-- End of first row, first column -->
+				<!-- Start of first row, second column -->
+				<div class="col-md-6 no-gutter">
+					<!-- Applying 'd-flex' class makes div take up entire height available to it -->
+					<img class="img-fluid landing-images rotate-right" src="img/stress-warmer-resized.jpg" alt="A placeholder image">
+				</div>
+				<!-- End of first row, second column -->
 			</div>
-			<!-- End of first row, first column -->
-			<!-- Start of first row, second column -->
-			<div class="col-md-6 no-gutter">
-				<!-- Applying 'd-flex' class makes div take up entire height available to it -->
-				<img class="img-fluid landing-images" src="img/stress-warmer-resized.jpg" alt="A placeholder image">
-			</div>
-			<!-- End of first row, second column -->
-		</section>
-		<!-- End of first row -->
-		<!-- Start of SECOND row -->
-		<section class="row flex-row-reverse align-items-stretch text-center rc-lightest-purple">
-			<!-- Start of SECOND row, first column -->
-			<div class="col-md-6 align-self-center my-5 py-5 my-md-0 py-md-0 ">
-		        <h2 class="display">Wouldn’t it be great if?</h2>
-		        <p class="lead col-12 offset-lg-1 col-lg-10">
-		        	<!-- 'col-md-6' and 'mx-auto' classes center element on medium-up screens -->
-		        	You should be <span class="italic">enjoying</span> the build-up to your big day, not worrying.
-		        </p>
-		        <p class="lead col-12 offset-lg-1 col-lg-10">
-		        	Imagine if there was a <span class="italic">free</span> service that made it all more manageable?
-		        </p>
-			</div>
-			<!-- End of SECOND row, first column -->
-			<!-- Start of SECOND row, second column -->
-			<div class="col-md-6 show-p no-gutter">
-				<img class="img-fluid landing-images" src="img/easier-way-less-warm.jpg" alt="A placeholder image">
-			</div>
-			<!-- End of SECOND row, second column -->
-		</section>
-		<!-- End of SECOND row -->
+			<!-- end Bootstrap row wrapper -->
+		</div>
+		<!-- end bootstrap container wrapper -->
+	</section>
+	<!-- End of first row -->
+	<!-- Start of SECOND row -->
+	<section class="rc-lightest-purple l-section">
+		<div class="container">
+			<div class="row flex-row-reverse align-items-stretch text-center">
+				<!-- Start of SECOND row, first column -->
+				<div class="col-md-6 align-self-center l-limited--width ">
+			        <h2 class="display">Wouldn’t it be great if?</h2>
+			        <p class="lead col-12 offset-lg-1 col-lg-10">
+			        	<!-- 'col-md-6' and 'mx-auto' classes center element on medium-up screens -->
+			        	You should be <span class="italic">enjoying</span> the build-up to your big day, not worrying.
+			        </p>
+			        <p class="lead col-12 offset-lg-1 col-lg-10">
+			        	Imagine if there was a <span class="italic">free</span> service that made it all more manageable?
+			        </p>
+				</div>
+				<!-- End of SECOND row, first column -->
+				<!-- Start of SECOND row, second column -->
+				<div class="col-md-6 no-gutter">
+					<img class="img-fluid landing-images rotate-left" src="img/easier-way-less-warm.jpg" alt="A placeholder image">
+				</div>
+				<!-- End of SECOND row, second column -->
 
-		<!-- Start of THIRD row -->
-		<section class="row align-items-stretch  text-center rc-light-purple">
-			<!-- 'Align-items-stretch' means images stretch to fill entire flex parent  -->
-			<!-- Start of THIRD row, first column -->
-			<div class="col-md-6 my-5 py-5 my-md-0 py-md-0 align-self-center">
-				<!-- 'Align-self-center' keeps flex child in center of parent -->
-		        <h2 class="display">We can help!</h2>
-		        <p class="lead col-12 offset-lg-1 col-lg-10">
-		        	<!-- 'col-md-6' and 'mx-auto' classes center element on medium-up screens -->
-		        	We provide a “one-stop shop” for all your wedding needs.
-		        </p>
-		        <p class="lead col-12 offset-lg-1 col-lg-10">
-		        	Keep track of <span class="italic">all</span> your tasks, from booking a venue to sending out invites, all in one place!
-		        </p>
 			</div>
-			<!-- End of THIRD row, first column -->
-			<!-- Start of THIRD row, second column -->
-			<div class="col-md-6 no-gutter">
-				<img class="img-fluid landing-images" src="img/wedding-warmer.jpg" alt="A placeholder image">
+		</div>
+		<!-- end bootstrap container  -->
+
+	</section>
+	<!-- End of SECOND row -->
+
+	<!-- Start of THIRD row -->
+	<section class="rc-light-purple l-section">
+		<div class="container">
+			<div class="row align-items-center  justify-content-center text-center ">
+				<!-- 'Align-items-stretch' means images stretch to fill entire flex parent  -->
+				<!-- Start of THIRD row, first column -->
+				<div class="col-md-6 my-5 py-5">
+					<!-- 'Align-self-center' keeps flex child in center of parent -->
+			        <h2 class="display">We can help!</h2>
+			        <p class="lead col-12 offset-lg-1 col-lg-10">
+			        	<!-- 'col-md-6' and 'mx-auto' classes center element on medium-up screens -->
+			        	We provide a “one-stop shop” for all your wedding needs.
+			        </p>
+			        <p class="lead col-12 offset-lg-1 col-lg-10">
+			        	Keep track of <span class="italic">all</span> your tasks, from booking a venue to sending out invites, all in one place!
+			        </p>
+				</div>
+				<!-- End of THIRD row, first column -->
+				<!-- Start of THIRD row, second column -->
+				<div class="col-md-6 no-gutter">
+					<img class="img-fluid landing-images rotate-right" src="img/wedding-warmer.jpg" alt="A placeholder image">
+				</div>
+				<!-- End of THIRD row, second column -->
 			</div>
-			<!-- End of THIRD row, second column -->
-		</section>
-		<!-- End of THIRD row -->
-		<div id="form-gap"></div>
-		<!-- Start of FORM row -->
-		<section class="row justify-content-center rc-lightest-purple">
-			<div class="col-12 col-md-6 col-lg-4 text-center my-5 py-5 rc-lighter-purple form-wrapper">
-				<h2 class="display">Sign-up Today!</h2>
-				<p class="lead col-12 offset-lg-1 col-lg-10">It’s completely <span class="italic">free.</span></p>
-				<form action="#" class="col-12 col-md-10 col-lg-8 mx-auto" id="sign-up-form">
-					<div class="form-group">
-					    <input type="email" class="form-control text-center" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
-					    <small id="emailHelp" class="form-text text-muted">We’ll never share your email with anyone else.</small>
-					</div>
-					<!-- Start of button -->
-					<button type="submit" class="btn btn-block rc-pink lead">Submit Email</button>
-					<!-- End of button -->
-				</form>
+		</div>
+		<!-- end bootstrap container -->
+	</section>
+	<!-- End of THIRD row -->
+	<div id="form-gap"></div>
+	<!-- Start of FORM row -->
+	<section class="rc-lightest-purple">
+		<div class="container">
+			<div class="row justify-content-center ">
+				<div class="col-12 col-md-6 col-lg-4 text-center my-5 py-5 rc-lighter-purple form-wrapper">
+					<h2 class="display">Sign-up Today!</h2>
+					<p class="lead col-12 offset-lg-1 col-lg-10">It’s completely <span class="italic">free.</span></p>
+					<form action="#" class="col-12 col-md-10 col-lg-8 mx-auto" id="sign-up-form">
+						<div class="form-group">
+						    <input type="email" class="form-control text-center" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+						    <small id="emailHelp" class="form-text text-muted">We’ll never share your email with anyone else.</small>
+						</div>
+						<!-- Start of button -->
+						<button type="submit" class="btn btn-block rc-pink lead">Submit Email</button>
+						<!-- End of button -->
+					</form>
+				</div>
 			</div>
-		</section>
-		<!-- End of FORM row -->
-	</div>
+		</div>
+
+	</section>
+	<!-- End of FORM row -->
+
 	<!-- end of content container wrapper -->
 	<!-- Start of Footer -->
 	<footer class="container-fluid text-center black">

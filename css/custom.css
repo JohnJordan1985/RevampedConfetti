@@ -13,7 +13,7 @@ header > div {
 
 header.jumbotron {
 	/* Sets minimum height on jumbotron elements, so that content doesn't determine height */
-	min-height: 400px;
+	min-height: 650px;
 }
 
 .display, .lead, .margin-bottom {
@@ -29,9 +29,6 @@ header.jumbotron {
 	/* Removes default Bootstrap padding from any element containing 'col-x' classes */
 	padding-left: 0;
 	padding-right: 0;
-}
-
-@media screen and (max-width: 766px){
 }
 
 @media screen and (max-width: 330px) {
@@ -191,6 +188,7 @@ body {
 	background-color: var(--rc-even-lightest-purple);
 	border-bottom-right-radius: 30px;
 	border-bottom-left-radius: 30px;
+	max-height: 500px;
 }
 .custom-toggler.navbar-toggler-icon {
 	/*Adds pink colour to border */
@@ -201,6 +199,17 @@ body {
 
 section {
 	background-color: #FFFFFF;
+}
+
+.l-section {
+	min-height: 532px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.l-limited--width {
+	max-width: 900px;
 }
 
 /* A class to apply to elements to highlight them for screenshots */
@@ -217,43 +226,42 @@ section {
 
 header.main-page {
 	background-image: url('../img/hero-warm.jpg');
+	min-height: 720px;
 }
 
 header.services {
 	background-image: url('../img/let-us-help-h800.jpg');
+
 }
 
 header.aboutus {
-	/* To push down image-containing div slightly */
-	margin-top-top: 3rem;
+
 	background-image: url("../img/why-we-do-this-background.jpg");
+
 }
 
 header.contactus {
 	background-image: url("../img/contact-us-500x200.jpg");
-}
-img.min-400 {
-	min-height: 320px;
-	max-height: 320px;
-	width: 100%;
-	display: flex;
-	flex: 1;
+
 }
 
-img.landing-images {
-	height: 100%;
+.landing-images {
+	height: 352px;
 	width: 100%;
-	min-height: 400px;
-	max-height: 400px;
+	border: solid 20px transparent;
+	/* Need to specify a border first, before image will display */
+	border-image: url('../img/frame-border.jpg') 300 round;
 }
 
-@media screen and (max-width: 767px) {
-	/* Restrict image size on smaller screens */
-	img.landing-images {
-		min-height: 320px;
-		max-height: 400px;
-	}
+.rotate-right {
+	transform: rotate(5deg);
 }
+
+.rotate-left {
+	transform: rotate(-5deg);
+}
+
+
 
 img.mh-50 {
 	/*custom class to restrict height of SVG logo-mark */
@@ -363,11 +371,16 @@ input, textarea {
 		padding-bottom: 1.5rem;
 		padding-top: 1.5rem;
 	}
+
+	.landing-images {
+		border: none;
+		transform: rotate(0deg);
+	}
 }
 
 /* Misc */
 
-section> .form-wrapper {
+.form-wrapper {
 	border: solid 20px transparent;
 	/* Need to specify a border first, before image will display */
 	border-image: url('../img/frame-border.jpg') 300 round;
