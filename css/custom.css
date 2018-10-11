@@ -70,21 +70,14 @@ small {
 	/*margin-bottom: 1.375rem;*/
 }
 
-@media screen and (max-width: 768px){
-	html {
-		/* Drops down font size to fit on smaller screens */
-		font-size: 0.875rem;
-	}
 
-	body {
-		line-height: 2rem;
-	}
-}
+/*Based Golden Section: 1, 1.618, 2.618, 4.236, 6.854 */
 
 h1.display>div {
 	/* Since I have each word of the H1 in seperate divs,
 	so that they start on a new line */
-	font-size: 4.236rem;
+	font-size: 6.854rem;
+	text-align: left;
 }
 
 h2.display {
@@ -98,6 +91,41 @@ h2.display {
 address, .navbar-nav {
 	font-size: 1rem;
 }
+
+@media screen and (max-width: 768px){
+	html {
+		/* Drops down font size to fit on smaller screens */
+		font-size: 0.875rem;
+	}
+
+	body {
+		line-height: 2rem;
+	}
+
+
+}
+
+@media screen and (max-width: 992px){
+	h1.display>div {
+		/* Since I have each word of the H1 in seperate divs,
+		so that they start on a new line */
+		text-align: left;
+		font-size: 4.236rem;
+
+	}
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+	h1.display>div {
+		/* Since I have each word of the H1 in seperate divs,
+		so that they start on a new line */
+		font-size: 6.854rem;
+		text-align: center;
+	}
+}
+
+
 
 /* Typefaces */
 
@@ -188,7 +216,8 @@ body {
 	background-color: var(--rc-even-lightest-purple);
 	border-bottom-right-radius: 30px;
 	border-bottom-left-radius: 30px;
-	max-height: 500px;
+	max-height: 600px;
+
 }
 .custom-toggler.navbar-toggler-icon {
 	/*Adds pink colour to border */
@@ -199,6 +228,7 @@ body {
 
 section {
 	background-color: #FFFFFF;
+	padding: 3rem auto;
 }
 
 .l-section {
@@ -209,7 +239,7 @@ section {
 }
 
 .l-limited--width {
-	max-width: 900px;
+	max-width: 1200px;
 }
 
 /* A class to apply to elements to highlight them for screenshots */
@@ -251,6 +281,7 @@ header.contactus {
 	border: solid 20px transparent;
 	/* Need to specify a border first, before image will display */
 	border-image: url('../img/frame-border.jpg') 300 round;
+
 }
 
 .rotate-right {
@@ -372,12 +403,16 @@ input, textarea {
 		padding-top: 1.5rem;
 	}
 
+
+}
+
+@media screen and (max-width: 576px) {
 	.landing-images {
 		border: none;
 		transform: rotate(0deg);
+		margin-bottom: 0;
 	}
 }
-
 /* Misc */
 
 .form-wrapper {
