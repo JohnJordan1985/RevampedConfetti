@@ -25,82 +25,89 @@
 <!-- start of new piece -->
 <body class="">
 	<!-- Start of navigation bar -->
-	<div class="container-fluid">
-		<!-- Used class 'sticky-top' rather than 'fixed-top' as 'fixed-top' overlaps content below it -->
-		<nav class="row navbar navbar-expand-md navbar-light sticky-top pb-0">
-			<!-- Start of anchor tag containing logo -->
-			<a class="navbar-brand col-9 col-md-4 mb-2 mb-md-0" href="#">
-				<!-- Logo -->
-				<!-- <img class="img-fluid d-md-none mh-50" src="img/logo-mark.svg" alt="The Revamped Confetti logo mark – a bouquet of flowers."> -->
-				<img class="img-fluid mh-66" src="../img/logo-full.svg" alt="The Revamped Confetti Logo.">
-				<!-- End logo -->
-			</a>
-			<!-- End of anchor tag containing logo -->
-			<!-- Start of button that controls collapsable menu functionality -->
-			<!-- Constrained width of button element and aligned it to right using 'ml-auto' class, to right-align hamburger icon -->
-			<button class="navbar-toggler ml-auto text-right" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation" role="navigation">
-			    <span class="navbar-toggler-icon"></span>
-			</button>
-			<!-- End of button that controls collapsable menu functionality -->
-			<!-- Start of nav bar menu items, wrapped in a div for collapsable functionality -->
-			<!-- Start of wrapper div -->
-			<div id="mobileMenu" class="col-12 col-md-8 collapse navbar-collapse text-center">
-				<!-- Needed to add class 'ml-auto' to right-align menu options -->
-				<ul class="navbar-nav ml-auto">
-					<!-- Start of navigation-links -->
-					<li class="nav-item">
-						<a href="../index.html" class="nav-link">
-							Home
-						</a>
-					</li>
-					<li class="nav-item">
-						<a href="services.html" class="nav-link">Services</a>
-					</li>
-					<li class="nav-item active">
-						<a href="#" class="nav-link">About Us</a>
-					</li>
-					<li class="nav-item">
-						<a href="contact.html" class="nav-link">Contact</a>
-					</li>
-					<!-- End of navigation-links -->
-					<!-- Items are right-aligned using flexbox 'justify-content-end' class. Needed to use full row width -->
-				</ul>
-				<!-- End of nav bar menu items -->
-			</div>
-			<!-- End of wrapper div-->
-		</nav>
-		<!-- End of navigation bar -->
+	<!-- Used class 'sticky-top' rather than 'fixed-top' as 'fixed-top' overlaps content below it -->
+	<nav class=" navbar navbar-expand-md navbar-light sticky-top pb-0">
+		<!-- Start of anchor tag containing logo -->
+		<a class="navbar-brand  mb-2 mb-md-0" href="#">
+			<!-- Logo -->
+			<img class="img-fluid d-md-none mh-50" src="../img/logo-mark.svg" alt="The Revamped Confetti logo mark – a bouquet of flowers." width="64">
+			<img class="img-fluid mh-66 d-none d-md-block" src="../img/logo-full.svg" alt="The Revamped Confetti Logo." width="320">
+			<!-- End logo -->
+		</a>
+		<!-- End of anchor tag containing logo -->
+		<!-- Start of button that controls collapsable menu functionality -->
+		<!-- Constrained width of button element and aligned it to right using 'ml-auto' class, to right-align hamburger icon -->
+		<button class="navbar-toggler ml-auto text-right" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation" role="navigation">
+		    <span class="navbar-toggler-icon"></span>
+		</button>
+		<!-- End of button that controls collapsable menu functionality -->
+		<!-- Start of nav bar menu items, wrapped in a div for collapsable functionality -->
+		<!-- Start of wrapper div -->
+		<div id="mobileMenu" class="collapse navbar-collapse text-center">
+			<!-- Needed to add class 'ml-auto' to right-align menu options -->
+			<ul class="navbar-nav ml-auto">
+				<!-- Start of navigation-links -->
+				<li class="nav-item">
+					<a href="../index.html" class="nav-link">
+						Home
+					</a>
+				</li>
+				<li class="nav-item">
+					<a href="services.html" class="nav-link">Services</a>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a href="contact.html" class="nav-link">Contact</a>
+				</li>
+				<!-- End of navigation-links -->
+				<!-- Items are right-aligned using flexbox 'justify-content-end' class. Needed to use full row width -->
+			</ul>
+			<!-- End of nav bar menu items -->
+		</div>
+		<!-- End of wrapper div-->
+	</nav>
+	<!-- End of navigation bar -->
 
-	</div>
 
-	<div class="container">
+
+
+
+
 		<!-- Start of jumbotron -->
 		<!-- Background-img set using 'aboutus' class, see CSS -->
-		<header class="row jumbotron aboutus py-0 back-image mb-0 no-gutter">
-			<!-- Padding-top of '0' to start overlay under nav-bar -->
-			<div class="offset-md-1 col-md-5 col-xl-4 pt-5 px-5 mb-3 header-banner">
-				<!-- Outer wrapper contains white overlay -->
-				<div class="col-md-12 mb-5">
-					<!-- Inner wrapper to constrain line length -->
-					<!-- Start of headline -->
-					<h1 class="display">
-						<!-- This div is purely for styling purposes - see CSS -->
-						<div>
-							Why We Do What We Do.
+		<header class="jumbotron py-0 back-image mb-0 no-gutter aboutus">
+			<div class="container">
+				<div class="row">
+					<!-- Padding-top of '0' to start overlay under nav-bar -->
+					<div class="col-md-5 col-xl-4 py-5 px-5 mb-3 header-banner">
+						<!-- Outer wrapper contains white overlay -->
+						<div class="col-md-12 mb-5">
+							<!-- Inner wrapper to constrain line length -->
+							<!-- Start of headline -->
+							<h1 class="display">
+								<!-- This div is purely for styling purposes - see CSS -->
+								<div>
+									Why We Do This
+								</div>
+							</h1>
+							<!-- End of headline -->
+							<!-- 'Lead' class applied to paragraph to add emphasis -->
+							<p class="lead">
+								Having planned our own weddings, we know that it can be a truly rewarding experience.
+							</p>
+							<p class="lead mb-5">
+								But, it is not without its challenges!
+							</p>
 						</div>
-					</h1>
-					<!-- End of headline -->
-					<!-- 'Lead' class applied to paragraph to add emphasis -->
-					<p class="lead">
-						Having planned our own weddings, we know that it can be a truly rewarding experience.
-					</p>
-					<p class="lead">
-						But, it is not without its challenges!
-					</p>
+						<!-- end inner wrapper -->
+					</div>
+					<!-- end outer wrapper -->
 				</div>
-				<!-- end inner wrapper -->
+				<!-- end of row -->
 			</div>
-			<!-- end outer wrapper -->
+			<!-- end of container div  -->
 		</header>
 		<!-- End of jumbotron -->
 		<!-- Start of first row -->
@@ -180,7 +187,7 @@
 		</section>
 		<!-- End of THIRD row -->
 
-	</div>
+
 
 	<div class="container-fluid">
 		<!-- Start of Footer -->
